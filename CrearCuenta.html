@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <meta charset="utf-8">
+    <link rel="stylesheet"
+        href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Crear.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Librerias%20Comunes/ngDialog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Librerias%20Comunes/ngDialog-theme-default.min.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="Libs/angular/ngDialog.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="Libs/angular/ngDialog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Libs/angular/ngDialog-theme-default.min.css" rel="stylesheet">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script type="text/javascript" src="Libs/angular/sweetalert.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="LIBRERIAS COMUNES/angular-material.min.js"></script>
+    <script type="text/javascript" src="LIBRERIAS COMUNES/angular-translate.min.js"></script>
+    <script src="js/Crear.js"></script>
+</head>
+<body style="background-color:black">
+    <div class="container-fluid" ng-controller="CrearCtrl" ng-app="kollaApp">
+        <div class="container">
+            <div id="login">
+                <h3 class="text-center text-white pt-5">Cerveza Kolla</h3>
+                <div class="container">
+                    <div id="login-row" class="row justify-content-center align-items-center">
+                        <div id="login-column" class="col-md-6">
+                            <div id="login-box" class="col-md-12">
+                                <div id="login-form" class="form-group">
+                                    <h3 class="text-center text-info">Crear Cuenta</h3>
+                                    <div class="form-group">
+                                        <label for="username" class="text-info">Nombre Usuario:</label><br>
+                                        <input type="text" id="username" class="form-control" ng-model="formu.Nombre">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username" class="text-info">Apellido:</label><br>
+                                        <input type="text" id="apellido" class="form-control" ng-model="formu.Apellido">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="username" class="text-info">Email :</label><br>
+                                        <input type="email" id="email" class="form-control" ng-model="formu.Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="text-info">Contraseña:</label><br>
+                                        <input type="password" id="password" class="form-control"
+                                            ng-model="formu.Contrasena">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="text-info">Repetir Contraseña:</label><br>
+                                        <input type="password" id="password" class="form-control"
+                                            ng-model="formu.ContrasenaR">
+                                    </div>
+                                    <div class="card-footer ">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-info"
+                                                    ng-click="CrearUsuario(formu)">Crear Usuario</button>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-danger"
+                                                    ng-click="Cancelar()">Cancelar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</html>

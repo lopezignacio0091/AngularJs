@@ -1,0 +1,54 @@
+<style>
+    #ngdialog3 .btn-dark {
+        margin-left: 220px;
+        margin-top: 30px;
+    }
+    
+    .ngdialog-content {
+        background-color: #e0eedc !important;
+        color: #4b5149 !important;
+    }
+    
+    .ng-untouched.ng-invalid-required {
+        color: black !important;
+        background-color: #e0eedc !important;
+    }
+    
+    .ng-valid {
+        color: #4b5149 !important;
+        background-color: #e0eedc !important;
+    }
+    
+    .ng-invalid-required {
+        color: #4b5149 !important;
+        background-color: #c1c4c0 !important;
+    }
+    
+    textarea {
+        width: 550px;
+        height: 100px;
+        resize: none;
+    }
+    
+    label {
+        color: #4b5149 !important;
+    }
+</style>
+<div class="form-group">
+    <div class="form-group">
+        <label for="nombreContacto" style="color:black">Ingrese Su Nombre : </label>
+        <input type="text" class="form-control" name="NombreContacto" placeholder="Ingrese su nombre" autocomplete="off" required ng-model="formu.Nombre">
+    </div>
+    <div class="form-group">
+        <label for="nombrePedido" style="color:black">Ingrese su Email : </label>
+        <input type="email" class="form-control" placeholder="Ingrese Email" required autocomplete="off" ng-model="formu.Email">
+    </div>
+    <div class="form-group">
+        <textarea rows="" cols="" width: "550px" placeholder="Ingrese Su Mensaje" ng-model="formu.Mensaje"></textarea>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <button type="button" class="btn btn-dark" ng-click="ModalForm(formu)"> Nuevo Testimonios </button>
+    </div>
+</div>

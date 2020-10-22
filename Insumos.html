@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Insumos.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+
+
+    <!-- <link rel="stylesheet" href="Librerias%20Comunes/ngDialog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Librerias%20Comunes/ngDialog-theme-default.min.css" rel="stylesheet"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="LIBRERIAS COMUNES/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+    src="Libs/angular/ngDialog.min.js"
+    type="text/javascript"></script>
+  <link rel="stylesheet"
+    href="Libs/angular/ngDialog.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="Libs/angular/ngDialog-theme-default.min.css"
+    rel="stylesheet">
+    <!-- Angular Material requires Angular.js Libraries -->
+
+    <!-- Angular Material Library -->
+
+    <script src="js/InsumosController.js"></script>
+    <script src="js/InsumosCompra.js"></script>
+
+
+</head>
+
+<body background="img\fondoHtml.jpg">
+    <div class="container-fluid" ng-controller="InsumosCtrl" ng-app="kollaApp">
+
+        <nav class="navbar navbar-dark bg-dark">
+
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img style="width:50px" id="logoNav" src="img/logo.jpg" alt="20"><a class="navbar-brand" href="Home.html"><strong>CevezaKolla</strong></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <input id="buscarInput"  style="width:350px"  type="text" ng-model="busqueda" class="form-control" placeholder="Ingrese lo que desea buscar..">
+                </ul>
+                <ul>
+
+                    <li class="list-inline-item"><button type="button" class="btn btn-info" ng-click="CerrarSesion()"><i class="fa fa-unlock-alt" aria-hidden="true" ></i>Cerrar sesion</button></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="container">
+            <div class="container row " id="ContenedorCards">
+                <div class="col-sm-4 col-12" ng-repeat=" item in Insumos | filter:busqueda">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card text-white bg-warning mb-3" id="CardInsumos" style="max-width: 18rem;background-color: #ACA713; ">
+                            <div class="card-header text-center"><strong>Cerveza Kolla</strong> </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-center">{{item.Nombre}}</h5>
+                            <img ng-src="{{item.Img}}" class="card-img-top img-responsive" alt=""><br>
+                            <p class="card-text"></p>
+                        </div>
+                        <div class="card-footer text-center">
+                            <i class="fa fa-cart-plus fa-6" aria-hidden="true"></i></i><button type="button" class="btn btn-dark" ng-click="ModalProyecto(item)">
+                            Comprar
+                          </button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+</body>
+<!--- Footer-->
+
+
+</html>

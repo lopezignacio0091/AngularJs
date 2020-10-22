@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3C3837;
+}
+
+#login .container #login-row #login-column #login-box {
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+
+
+#login {
+    background: url('../img/fondoGUI.jpg');
+}
+
+.align-items-center {
+    height: 900px;
+}
+.container{
+    position: relative
+}
+
+
+#login .container #login-row #login-column #login-box {
+    background-color: #3C3837;
+    color: white;
+    opacity: 0.9;
+    height: 380px;
+}
+
+.align-items-center {
+    margin-top: -200px;
+}
+
+.form-group .col-md-6 {
+    margin-top: 30px;
+}
+
+.btn-info {
+    margin-left: 50px
+}
+
+strong {
+    margin-left: 5px;
+}
+
+.fa-user-o {
+    margin-left: 20px;
+}

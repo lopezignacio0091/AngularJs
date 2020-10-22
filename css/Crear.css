@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #3C3837;
+}
+
+#login .container #login-row #login-column #login-box {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 20px;
+}
+
+#login .container #login-row #login-column #login-box #login-form #register-link {
+    margin-top: -85px;
+}
+
+#login {
+    background: url('../img/fondoGUI.jpg');
+}
+
+.align-items-center {
+    height: 900px;
+}
+
+#login .container #login-row #login-column #login-box {
+    background-color: #3C3837;
+    color: white;
+    opacity: 0.9
+}
+
+.align-items-center {
+    margin-top: -200px;
+}
+
+.col-md-12 {
+    height: 400px !important;
+}
+
+.btn-info {
+    margin-left: 150px;
+}
+
+.icono.izquierda {
+    margin-right: 4px;
+    -webkit-border-radius: 0 3px 0 3px;
+    -moz-border-radius: 0 3px 0 3px;
+    -o-border-radius: 0 3px 0 3px;
+    -ms-border-radius: 0 3px 0 3px;
+}
+
+.col-md-12 {
+    height: 600px !important;
+}
+
+.text-info input {
+    width: 150px;
+    height: 35;
+    margin-left: 140px;
+    background-color: rgb(38, 107, 116);
+    color: white;
+}
+
+.btn-dark {
+    width: 150px;
+    background-color: #1794A7;
+    color: white;
+    margin-left: 100px;
+}
+
+.btn-info {
+    margin-left: 10px;
+    width: 150px;
+}
+
+.btn-danger {
+    margin-left: 50px;
+}

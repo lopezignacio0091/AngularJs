@@ -1,0 +1,293 @@
+.modal.modal-alert .modal-dialog .modal-content {
+    border-radius: 6px;
+    padding: 0;
+}
+
+.modal.modal-alert .modal-dialog .modal-content .modal-header {
+    padding: 9px 15px;
+    border-bottom: 1px solid #eee;
+    background-color: #0480be;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal.modal-alert .modal-dialog .modal-content .modal-body {
+    padding: 10px 0;
+}
+
+.modal.modal-alert .modal-dialog .modal-content .modal-footer {
+    padding-top: 15px;
+}
+
+.modal-header {
+    background-color: #7F857B;
+    color: white;
+}
+
+.img-responsive {
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.col-12 {
+    margin-top: 30px;
+}
+
+#FooterNuestros {
+    margin-top: 300px;
+}
+
+#Redes {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#card #logosCervezas3 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+#Tiendas {
+    padding-left: 50px;
+}
+
+#Imagen {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+#Tiendas {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#direccion {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+#Redes {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.IdHr {
+    border: 1px solid;
+}
+
+#FooterNuestros {
+    background-color: 32383E;
+    color: white;
+}
+
+.img-responsive {
+    padding-right: 32px;
+}
+
+#buscarInput {
+    left: 100px;
+    color: grey;
+    position: relative;
+}
+
+.navbar-dark {
+    height: 80px;
+    margin-bottom: 80px;
+}
+
+#ContenedorCards {
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.navbar .container-fluid {
+    margin-bottom: 20px;
+}
+
+.navbar .container-fluid {
+    margin-bottom: 20px;
+}
+
+.active a {
+    color: white;
+}
+
+.navbar-right a {
+    color: white;
+}
+
+li a {
+    color: white;
+}
+
+li a:hover {
+    color: red;
+}
+
+img {
+    width: 50px;
+    margin-right: 12;
+}
+
+.btn-dark {
+    background-color: #ACA713 !important;
+    border-color: #ACA713 !important;
+}
+
+#CardInsumos {
+    background-color: #ACA713 !important;
+    border-color: #ACA713 !important;
+}
+
+.fa-6 {
+    margin-right: 10px;
+}
+
+section {
+    padding: 40px 0;
+    margin-top: 80px;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: #85a598 !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: #ffffff;
+}
+
+#footer ul.social li a:hover {
+    color: #eeeeee;
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+}
+
+#logoNav {
+    width: 50px;
+    margin-right: 12;
+}
+
+.fa-list {
+    margin-right: 10px;
+}
+
+.fa-credit-card-alt {
+    margin-right: 10px;
+}
+
+.fa-unlock-alt {
+    margin-right: 10px;
+}
+
+.fa-user-o {
+    margin-right: 5px;
+}
+
+.bg-dark {
+    width: 1360px;
+}
+
+.ng-scope {
+    width: auto;
+}
+
+.container.row {
+    margin-top: 100px;
+}
+
+.container {
+    margin-top: 50px
+}
+
+.navbar-dark {
+    width: auto;
+}
+
+#footer {
+    margin-top: 200px;
+}
+
+.ng-valid {
+    margin-right: 300px;
+}

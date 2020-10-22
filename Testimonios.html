@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Testimonios.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="Librerias%20Comunes/ngDialog.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Librerias%20Comunes/ngDialog-theme-default.min.css" rel="stylesheet">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- <script type="text/javascript" src='LIBRERIAS COMUNES/jquery-ui.min.js'></script>
+            <script type="text/javascript" src="LIBRERIAS COMUNES/jquery.cookie.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="LIBRERIAS COMUNES/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <!-- <script type="text/javascript" src="LIBRERIAS COMUNES/jquery.min.js"></script>
+            <script type="text/javascript" src="LIBRERIAS COMUNES/moment.js"></script>
+            <script type="text/javascript" src="LIBRERIAS COMUNES/sweetalert.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- <script src="LIBRERIAS COMUNES/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+    src="Libs/angular/ngDialog.min.js"
+    type="text/javascript"></script>
+  <link rel="stylesheet"
+    href="Libs/angular/ngDialog.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet"
+    href="Libs/angular/ngDialog-theme-default.min.css"
+    rel="stylesheet">
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script type="text/javascript" src="Libs/angular/sweetalert.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="LIBRERIAS COMUNES/angular-material.min.js"></script>
+    <script type="text/javascript" src="LIBRERIAS COMUNES/angular-translate.min.js"></script>
+
+    <script src="js/Testimonios.js"></script>
+    <script src="js/FormuController.js"></script>
+
+
+</head>
+
+<body background="img\fondoHtml.jpg">
+    <div class="container-fluid" ng-controller="TestimoniosCtrl" ng-app="kollaApp">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div>
+                        <img style="width:50px" id="logoNav" src="img/logo.jpg" alt="20"><a class="navbar-brand" href="Home.html"><strong>CevezaKolla</strong></a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="/practica/Estilos.html"><i class="fa fa-list" aria-hidden="true"></i>Nuestros Productos</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="list-inline-item"><a href="/practica/Ingreso.html"><i class="fa fa-user-o" aria-hidden="true"></i> Ingresar</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-inline-item"><button type="button" class="btn btn-info" ng-click="CerrarSesion()"><i class="fa fa-unlock-alt" aria-hidden="true" ></i>Cerrar sesion</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="container row " id="ContenedorCards">
+            <div class="col-sm-4 col-12" ng-repeat=" item in Testimonios | filter:busqueda">
+                <div class="card" style="width: 18rem;">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+                        <div class="card-header text-center"><strong>Cervez Kolla</strong> </div>
+                    </div>
+                    <div class="card-body">
+                        <h4>{{item.Email}}</h4>
+                        <p>{{item.Mensaje}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="button" class="btn btn-dark" ng-click="ModalForm()">Nuevo Testimonios  </button>
+        </div>
+    </div>
+
+</body>
+<section id="footer">
+    <div class="container-fluid">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-6 col-md-6 text-center">
+                <h5> Links del Sitio </h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Estilos</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 text-center ">
+                <h5>Paginas Amigas</h5>
+                <ul class="list-unstyled quick-links text-center">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Cerveceria Antares</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Cerveceria Patagonia</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p><u><a href="https://www.nationaltransaction.com/">Compania de Productos Artesanales</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+                <p class="h6">&Derechos Reservados.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Cerveceria-Kolla</a></p>
+            </div>
+            </hr>
+        </div>
+    </div>
+
+
+
+</html>
